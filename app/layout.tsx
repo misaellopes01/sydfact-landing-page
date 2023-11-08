@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
 
-const poppins = Poppins({ weight: ['400', '500', '700', '800', '900'], subsets: ['latin'] })
+const roboto = Roboto({ weight: ['100', '300', '400', '700', '900'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sydfact - Angola',
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html lang="en" className='scroll-smooth focus:scroll-auto'>
+      <body className={roboto.className}>
         <div className='w-full h-full m-auto flex flex-col justify-center items-center'>
           <Header />
           {children}
