@@ -90,7 +90,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="flex flex-col w-full h-full p-2">
+    <section className="flex flex-col w-full h-full px-2 py-6">
       <div className="flex flex-row flex-wrap justify-start gap-4">
        {
         features.map((item) => (
