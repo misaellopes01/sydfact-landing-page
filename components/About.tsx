@@ -46,7 +46,7 @@ export function About() {
       <div className="flex flex-row flex-wrap justify-start gap-8">
        {
         aboutFeature.map((item) => (
-          <Card className="w-[300px] h-[200px] bg-slate-50 border-none flex flex-row-reverse justify-center items-center shadow-2xl" key={item.id}>
+          <Card className="w-[300px] h-[200px] bg-slate-50 border-none flex flex-row-reverse justify-center items-center shadow-lg" key={item.id}>
           <CardHeader className='w-[70%]'>
             <CardTitle className='text-blue-950'>{item.title}</CardTitle>
             <CardDescription className='text-blue-950 pt-4 font-light leading-relaxed'>
