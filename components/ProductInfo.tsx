@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Target, Info, CurrencyCircleDollar, GearSix } from '@phosphor-icons/react/dist/ssr'
 import { useState } from 'react'
 import { About } from './About'
+import { Features } from './Features'
 
 interface ProductInfoProps {
   variant: 'about' | 'features' | 'for_who' | 'price'
@@ -34,6 +35,9 @@ export function ProductInfo(){
       </header>
       {show === 'about' && (
         <About />
+      )}
+      {show === 'features' && (
+        <Features />
       )}
     </>
   )
