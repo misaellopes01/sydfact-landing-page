@@ -1,4 +1,5 @@
 import { ProductInfo } from '@/components/ProductInfo'
+import { Button } from '@/components/ui/button'
 
 import { Separator } from '@/components/ui/separator'
 
@@ -24,11 +25,20 @@ export default function Home() {
           <h2 className='text-2xl font-semibold text-blue-950'>Programa de facturação certificado pela AGT</h2>
           <Separator className="my-1 h-[1px] rounded-full w-[200px] bg-blue-950" />
           <p className='text-center text-blue-950'>O SYDFACT é um programa de facturação certificado pela AGT, simples e prático. <br/> A Solução ideal de facturação e gestão de stocks automática para pequenas, médias empresas e profissionais liberais.</p>
-          <div className='flex flex-col justify-start w-full bg-slate-50 rounded-md mt-6'>
+          <div className='w-full flex flex-col justify-start bg-slate-50 rounded-md mt-6'>
             <ProductInfo />
           </div>
         </div>
       </section>
+      <div className='w-screen bg-gradient-to-r from-cyan-500 to-land-end  flex flex-row items-center justify-center p-6 gap-12'>
+        <div className="">
+          <h4 className='text-2xl text-slate-100'>Não espere mais, comece ainda hoje a facturar!</h4>
+          <p className='text-sm text-slate-50 font-light'>Experimente o SYDFACT gratuitamente com todas as funcionalidades</p>
+        </div>
+        <Button variant={'secondary'} className='text-lg text-blue-950'>
+          Experimentar gratis
+        </Button>
+      </div>
       <section id='contact-us' className='w-full h-full bg-slate-50 flex justify-center pb-10'>
         <div className='max-w-5xl h-[1000px] flex flex-col justify-start pt-44 items-center gap-4'>
           <div>

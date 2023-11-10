@@ -52,7 +52,8 @@ module.exports = {
         },
         land: {
           start: '#CB1AE8',
-          end: '#2AC5D9'
+          end: '#2AC5D9',
+          money: '#FB9300'
         }
       },
       borderRadius: {

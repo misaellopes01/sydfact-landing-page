@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { About } from './About'
 import { Features } from './Features'
 import { ForWho } from './ForWho'
+import { Price } from './Price'
 
 interface ProductInfoProps {
   variant: 'about' | 'features' | 'for_who' | 'price'
@@ -42,6 +43,9 @@ export function ProductInfo(){
       )}
       {show === 'for_who' && (
         <ForWho />
+      )}
+      {show === 'price' && (
+        <Price />
       )}
     </>
   )
