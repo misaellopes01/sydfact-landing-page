@@ -31,7 +31,7 @@ export function Price() {
             <ul className='p-1 list-disc flex flex-col justify-center items-center'>
               <div>
               {price.includes?.map((item, index) => (
-                <li className='text-sky-900 font-semibold pt-2 text-lg' key={item + index}>{item}</li>
+                <li className='text-green-800 font-semibold pt-2 text-lg' key={item + index}>{item}</li>
               ))}
               </div>
             </ul>
