@@ -5,6 +5,7 @@ import { Target, Info, CurrencyCircleDollar, GearSix } from '@phosphor-icons/rea
 import { useState } from 'react'
 import { About } from './About'
 import { Features } from './Features'
+import { ForWho } from './ForWho'
 
 interface ProductInfoProps {
   variant: 'about' | 'features' | 'for_who' | 'price'
@@ -38,6 +39,9 @@ export function ProductInfo(){
       )}
       {show === 'features' && (
         <Features />
+      )}
+      {show === 'for_who' && (
+        <ForWho />
       )}
     </>
   )
