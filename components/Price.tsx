@@ -2,6 +2,7 @@ import { Money } from '@phosphor-icons/react/dist/ssr'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import Image from 'next/image'
 import { priceFormatter } from '@/utils/formatter'
+import { Button } from './ui/button'
 
 const price = {
   amount: 300000,
@@ -18,9 +19,9 @@ const price = {
 
 export function Price() {
   return (
-    <section className="flex flex-col w-full h-full px-2 py-6">
-      <div className="flex flex-row justify-center shadow-lg bg-white">
-          <Card className="w-full h-[442] border-none flex flex-col justify-center items-center gap-6 shadow-none bg-gradient-to-r from-land-end to-white" >
+    <section className="flex flex-col w-full h-full px-2 py-6 bg-transparent">
+      <div className="flex flex-row justify-center rounded-lg shadow-lg bg-white">
+          <Card className="w-full h-[442] border-none flex flex-col justify-center items-center gap-6 shadow-none bg-gradient-to-r from-land-end to-white rounded-lg"  >
           <CardHeader className='w-full pb-0'>
             <CardTitle className='text-slate-50 flex flex-row justify-center items-center gap-2'>
               <span className='text-5xl text-green-800 leading-relaxed'> {priceFormatter.format(price.amount)}</span>
@@ -35,9 +36,12 @@ export function Price() {
               ))}
               </div>
             </ul>
+            <Button className='m-auto px-12 mt-4 bg-sky-900 uppercase'>
+              Comprar
+            </Button>
           </CardContent>          
         </Card>
-        <Image src={'/people.svg'} height={442} width={259} alt='Pessoa feliz' />
+        <Image src={'/people.svg'} height={442} width={259} alt='Pessoa feliz' className='transition-all' />
       </div>
      
   </section>

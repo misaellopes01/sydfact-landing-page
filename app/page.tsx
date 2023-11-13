@@ -1,3 +1,4 @@
+import { ContactForm } from '@/components/ContactForm'
 import { ProductInfo } from '@/components/ProductInfo'
 import { Button } from '@/components/ui/button'
 
@@ -39,9 +40,9 @@ export default function Home() {
           Experimentar gratis
         </Link>
       </section>
-      <section id='contact-us' className='w-full h-full bg-slate-50 flex justify-center pb-10'>
+      <section id='why-us' className='w-full h-full bg-slate-50 flex justify-center pb-10'>
         <div className='max-w-5xl h-full flex flex-row justify-start pt-28 items-center gap-2'>
-          <div>
+          <div className='w-[70%]'>
             <h3 className='pl-4 pb-4 text-2xl text-sky-900'>Porque é que o SYDFACT é a solução indicada?</h3>
             <div className='px-2 py-4 flex flex-col gap-2'>
               <strong className='text-sky-900 border-b border-land-end'>Criado a pensar em nós</strong>
@@ -62,11 +63,40 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div>
-            <Image src={'/fsydfact.png'} alt='Visualizacao da Factura' width={510} height={720} className='shadow-3xl' />
+          <div className='w-[30%]'>
+            <Image src={'/fsydfact.png'} alt='Visualizacao da Factura' width={642} height={854} className='shadow-2xl' />
           </div>
         </div>
-      </section>  
+      </section>
+      <section id='contact-us' className='w-full h-full bg-slate-50 flex justify-center pb-10'>
+        <div className='max-w-5xl h-[647px] flex flex-row justify-start pt-28 items-center gap-2 shadow-lg'>
+          <div className='w-[40%] h-full bg-land-end rounded-bl-lg rounded-tl-lg p-3'>
+            <div className='px-2 py-2 flex flex-col gap-2'>
+              <h3 className='pl-4 pb-4 text-2xl text-sky-900'>Contact Information</h3>
+              <span>Say something to start a live chat!</span>
+            </div>
+            <ul className='px-2 py-2 flex flex-col gap-2'>
+              <li>
+                <span>+1012 3456 789</span>
+              </li>
+              <li>
+                <span>demo@gmail.com</span>
+              </li>
+              <li>
+                <span>132 Dartmouth Street Boston, Massachusetts 02156 United States</span>
+              </li>
+            </ul>
+            <div className='px-2 py-2 flex flex-col gap-2'>
+              <Link href={'#'}></Link>
+              <Link href={'#'}></Link>
+              <Link href={'#'}></Link>
+            </div>
+          </div>
+          <div className='w-[60%] h-full'>
+            <ContactForm />
+          </div>
+        </div>
+      </section>    
     </main>
   )
 }

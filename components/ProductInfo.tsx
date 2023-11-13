@@ -17,7 +17,7 @@ export function ProductInfo(){
   const [show, setShow] = useState<string>('about')
   return (
     <>
-      <header className='grid grid-cols-4'>
+      <header className='w-[1100px] grid grid-cols-4'>
         <Button variant="outline" onClick={() => setShow('about')} className={`${show === 'about' ? 'bg-land-end text-slate-50' : 'text-slate-700'} flex flex-row gap-2 justify-center items-center uppercase  leading-relaxed font-medium hover:text-slate-50 hover:bg-land-end py-6`}>
           <Info size={24} />
           Acerca
