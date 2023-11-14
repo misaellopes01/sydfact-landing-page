@@ -73,12 +73,12 @@ export default function Home() {
         <div className='max-w-5xl h-[647px] flex flex-row justify-start mt-28 items-center gap-2 shadow-lg'>
           <div className='w-[40%] px-3 h-full bg-land-end rounded-bl-lg -rounded-br-lg rounded-tl-lg -rounded-tr-lg p-3 flex flex-col justify-between'>
             <div className='px-2 py-2 flex flex-col gap-2'>
-              <h3 className='text-2xl leading-relaxed font-thin text-sky-950'>Informação de contacto</h3>
-              <span className='font-thin text-sky-950'>Sinta-se livre para nos contactar!</span>
+              <h3 className='text-2xl leading-relaxed font-light text-sky-950'>Informação de contacto</h3>
+              <span className='font-light text-sky-950'>Sinta-se livre para nos contactar!</span>
               <Separator className='bg-sky-900' />
             </div>
             <iframe className='w-full px-2 !rounded-2xl h-[300px] border-none' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.1534011404206!2d13.587786574348273!3d-12.37265494805264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb1d42b369d2bd1%3A0x393bd1688549f8c!2sFarm%C3%A1cia%2027%20de%20Marco!5e0!3m2!1spt-PT!2sao!4v1699928014228!5m2!1spt-PT!2sao" loading="lazy"></iframe>
-            <ul className='px-2 py-2 flex flex-col gap-2 text-sky-950 font-thin'>
+            <ul className='px-2 py-2 flex flex-col gap-2 text-sky-950 font-light'>
               <li>
                 <Link href={'tel:+244938782078'}>+244 938 782 078</Link>
               </li>

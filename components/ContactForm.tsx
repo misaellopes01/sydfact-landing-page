@@ -14,7 +14,7 @@ export function ContactForm() {
   return (
     <Card className="h-full w-full rounded-none shadow-none border-none bg-slate-50">
       <CardHeader>
-        <CardTitle className="text-land-end text-2xl pb-0 leading-relaxed font-thin">Formulário de contacto</CardTitle>
+        <CardTitle className="text-land-end text-2xl pb-0 leading-relaxed font-light">Formulário de contacto</CardTitle>
         <Separator className='bg-land-end' />
         <CardDescription className="pt-4">
           Se pretende ser contactado envie-nos este pequeno formulário onde deverá preencher os seus dados.
