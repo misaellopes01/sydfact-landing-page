@@ -98,15 +98,15 @@ export default function Home() {
                 </span>
               </li>
             </ul>
-            <div className='px-2 py-2 flex flex-row gap-2'>
+            <div className='px-2 py-2 flex flex-row gap-5 w-full bg-sky-950 rounded-md justify-center items-center'>
               <Link href={'#'}>
-                <FacebookLogo size={32} />
+                <Image src={'/facebook.png'} width={32} height={32} alt='Facebook Button' />
               </Link>
               <Link href={'#'}>
-                <InstagramLogo size={32} />
+                <Image src={'/instagram.png'} width={32} height={32} alt='Instagram Button' />
               </Link>
               <Link href={'#'}>
-                <WhatsappLogo size={32} />
+                <Image src={'/whatsapp.png'} width={32} height={32} alt='WhatsApp Button' />
               </Link>
             </div>
           </div>
