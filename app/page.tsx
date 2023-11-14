@@ -3,7 +3,7 @@ import { ProductInfo } from '@/components/ProductInfo'
 import { Button } from '@/components/ui/button'
 
 import { Separator } from '@/components/ui/separator'
-import { FacebookLogo, InstagramLogo, WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
+import { EnvelopeSimple, FacebookLogo, InstagramLogo, MapPin, PhoneCall, WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -80,13 +80,22 @@ export default function Home() {
             <iframe className='w-full px-2 !rounded-2xl h-[300px] border-none' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.1534011404206!2d13.587786574348273!3d-12.37265494805264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb1d42b369d2bd1%3A0x393bd1688549f8c!2sFarm%C3%A1cia%2027%20de%20Marco!5e0!3m2!1spt-PT!2sao!4v1699928014228!5m2!1spt-PT!2sao" loading="lazy"></iframe>
             <ul className='px-2 py-2 flex flex-col gap-2 text-sky-950 font-light'>
               <li>
-                <Link href={'tel:+244938782078'}>+244 938 782 078</Link>
+                <Link href={'tel:+244938782078'} className='flex flex-row gap-2 hover:text-white transition-all'>
+                  <PhoneCall size={24} />
+                  +244 938 782 078
+                </Link>
               </li>
               <li>
-                <Link href={'mailto:demo@gmail.com'}>demo@gmail.com</Link>
+                <Link href={'mailto:demo@gmail.com'} className='flex flex-row gap-2 hover:text-white transition-all'>
+                  <EnvelopeSimple size={24} />
+                  demo@gmail.com
+                </Link>
               </li>
               <li>
-                <span>132 Dartmouth Street Boston, Massachusetts 02156 United States</span>
+                <span className='flex flex-row gap-2 hover:text-white transition-all cursor-pointer'>
+                  <MapPin size={24} />
+                  132 Dartmouth Street Boston
+                </span>
               </li>
             </ul>
             <div className='px-2 py-2 flex flex-row gap-2'>
